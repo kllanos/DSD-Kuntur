@@ -1,0 +1,33 @@
+C:\Users\jorge\Desktop\Sistema_Matricula\Presentacion_Matricula\bin\Presentacion_Matricula.dll
+C:\Users\jorge\Desktop\Sistema_Matricula\Presentacion_Matricula\bin\Presentacion_Matricula.pdb
+C:\Users\jorge\Desktop\Sistema_Matricula\Presentacion_Matricula\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jorge\Desktop\Sistema_Matricula\Presentacion_Matricula\obj\Debug\Presentacion_Matricula.dll
+C:\Users\jorge\Desktop\Sistema_Matricula\Presentacion_Matricula\obj\Debug\Presentacion_Matricula.pdb
+C:\Users\jorge\Desktop\Sistema_Matricula\Presentacion_Matricula\bin\BusinnesLayer.dll
+C:\Users\jorge\Desktop\Sistema_Matricula\Presentacion_Matricula\bin\EntitiesLayer.dll
+C:\Users\jorge\Desktop\Sistema_Matricula\Presentacion_Matricula\bin\DataLayer.dll
+C:\Users\jorge\Desktop\Sistema_Matricula\Presentacion_Matricula\bin\BusinnesLayer.pdb
+C:\Users\jorge\Desktop\Sistema_Matricula\Presentacion_Matricula\bin\EntitiesLayer.pdb
+C:\Users\jorge\Desktop\Sistema_Matricula\Presentacion_Matricula\bin\DataLayer.pdb
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\Presentacion_Matricula.dll
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\Presentacion_Matricula.pdb
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\BusinnesLayer.dll
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\EntitiesLayer.dll
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\DataLayer.dll
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\BusinnesLayer.pdb
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\EntitiesLayer.pdb
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\DataLayer.pdb
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\Presentacion_Matricula\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\Presentacion_Matricula\obj\Debug\Presentacion_Matricula.dll
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\Presentacion_Matricula\obj\Debug\Presentacion_Matricula.pdb
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\Presentacion_Matricula.dll
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\Presentacion_Matricula.pdb
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\BusinnesLayer.dll
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\EntitiesLayer.dll
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\DataLayer.dll
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\BusinnesLayer.pdb
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\EntitiesLayer.pdb
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\Presentacion_Matricula\bin\DataLayer.pdb
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\Presentacion_Matricula\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\Presentacion_Matricula\obj\Debug\Presentacion_Matricula.dll
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\Presentacion_Matricula\obj\Debug\Presentacion_Matricula.pdb

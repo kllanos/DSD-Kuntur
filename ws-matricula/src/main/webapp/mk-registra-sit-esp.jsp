@@ -8,10 +8,25 @@
 <html>
 <head>
 <title> Welcome to Markham College </title>
+
+<script type="text/javascript">
+
+	function grabarMat()
+	{
+
+		document.formularioPersona.accion.value = 'grabarmat';
+		document.formularioPersona.submit();
+	}
+	
+</script>
+
+
 </head>
 
 <body bgcolor= "#FFFFFF">
 <%@ include file="mk-menu.jsp" %>
+<form name="formularioPersona" method="get" action="<%=request.getContextPath()%>/matricula.do">
+<input type="hidden" name="accion" value=""/>
 <font face="verdana"><b>Matrícula > Proceso de Matrícula</b></font>
 <br></br>
 
@@ -24,28 +39,23 @@
 
 <form method="post">
 <br>Por favor, describa cualquier situación especial abajo (excepto problemas de salud): </br>
-<textarea name="comentarios" rows="10" cols="85"></textarea>
+<textarea name="txtCommentsSpecial" rows="10" cols="85"></textarea>
 
 <br>
-<input name="check" type="checkbox" /><b>Por favor marque el recuadro si desea que solo el Headmster, el Director y el Jefe de Sección pueden ver esta información.<br />
+<input name="chkSeguridad" type="checkbox" /><b>Por favor marque el recuadro si desea que solo el Headmster, el Director y el Jefe de Sección pueden ver esta información.<br />
 
 <br>Problemas de salud y/o alergias</br>
-<textarea name="comentarios" rows="10" cols="85"></textarea>
+<textarea name="txtCommentsSalud" rows="10" cols="85"></textarea>
 </form>
 
 
-<form method="post">
-<!-- 
-<input type="submit" value="Continuar" />
--->
-
-<A href="mk-acepta-mat.jsp"><img src="images/continuar.png" width="98" height="34" align="right"></A>
-</form>
+<br></br>
+<input type="submit" name="btnGrabar" value="Continuar" onclick="javascript:grabarMat();"  />
  
 
 </small>
 </font>
-
+</form>
 </body>
 
 

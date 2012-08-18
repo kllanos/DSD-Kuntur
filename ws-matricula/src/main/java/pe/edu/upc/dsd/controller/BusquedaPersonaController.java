@@ -16,6 +16,7 @@ import org.springframework.web.servlet.view.RedirectView;
 
 
 import pe.edu.upc.dsd.service.Service;
+import pe.edu.upc.dsd.ws.bean.Alumno;
 import pe.edu.upc.dsd.ws.bean.Persona;
 
 
@@ -26,10 +27,13 @@ public class BusquedaPersonaController extends AbstractController
 	private static final Logger logger = Logger.getLogger(BusquedaPersonaController.class);
 	
 	private static final String VISTA_BUSQUEDA_DNI = "mk-dni";
+	private static final String VISTA_CONTINUAR_MATRICULA = "mk-registra-sit-esp";
 	private static final String PARAMETRO_ACCION = "accion";
 	private static final String PARAMETRO_DNI = "txtDNI";
+	private static final String PARAMETRO_ALUMNONUMERO = "s";
 	
 	private static final String ACCION_BUSCAR = "buscar";
+	private static final String ACCION_GRABAR = "grabardni";
 	
 	
 	private Service service;
@@ -45,14 +49,36 @@ public class BusquedaPersonaController extends AbstractController
 			
 			String dni = request.getParameter(PARAMETRO_DNI);
 			
+			String s =  request.getParameter(PARAMETRO_ALUMNONUMERO);
+			
 			logger.debug("Se realizara la busqueda con los siguientes parametros: codigo='" + dni + "'");
 			
 			Persona persona = buscarPersona(dni);
 			setAttributeToModel(request, "persona", persona);
-			
-			//logger.debug("Retorna DNI?='" + persona.getDni() + "'");
+			setAttributeToModel(request, "s", s);
 			
 			return new ModelAndView(VISTA_BUSQUEDA_DNI, getModel(request));
+		}
+		
+		if(esAccionGrabar(request))
+		{
+			logger.debug("Empezamos a grabar el DNI...");
+			
+			String dni = request.getParameter(PARAMETRO_DNI);
+			
+			
+			Persona persona = buscarPersona(dni);
+			
+			String codigoAlu = (String)request.getSession().getAttribute("alumnoSeleccionado");
+			
+			Alumno alumnoActualizar = service.obtenerAlumno(codigoAlu);
+			
+			alumnoActualizar.setDocumentoIdentidad(dni);
+			
+			logger.debug("Retorna codigo Alumno de la session?='" + codigoAlu + "'");
+			logger.debug("El DNI del alumno esta actualizado='" + alumnoActualizar.getDocumentoIdentidad() + "'");
+			
+			return new ModelAndView(VISTA_CONTINUAR_MATRICULA, getModel(request));
 		}
 		
 		
@@ -99,6 +125,12 @@ public class BusquedaPersonaController extends AbstractController
 	{
 		return ACCION_BUSCAR.equals(request.getParameter(PARAMETRO_ACCION));
 	}
+	
+	private boolean esAccionGrabar(HttpServletRequest request)
+	{
+		return ACCION_GRABAR.equals(request.getParameter(PARAMETRO_ACCION));
+	}
+	
 	/**
 	 * @param service
 	 */

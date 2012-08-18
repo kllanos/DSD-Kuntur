@@ -1,5 +1,6 @@
 package pe.edu.upc.dsd.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import pe.edu.upc.dsd.ws.bean.Alumno;
@@ -24,5 +25,11 @@ public interface Service
 	
 	List<Alumno> obtenerHijos(String codigoParent);
 	
+	Alumno obtenerAlumno(String codigoAlu);
+	
+	List<Parent> obtenerFamilia(String codigoParent);
+	
+	Parent obtenerParents(String codigoParent);
+
 	
 }
