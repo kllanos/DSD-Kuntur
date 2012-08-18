@@ -49,7 +49,7 @@ public class ServiceImpl implements Service
 		    	parent1.setOtrodoc("Brevete 123312312");
 		    	parent1.setCelular("990995688");
 		    	parent1.setEmail("mrinbox@gmail.com");
-		    	
+		    	parent1.setEstado("PENDIENTE");
 		        
 		        Parent parent2 = new Parent();
 		        parent2.setCodigoParent("PAR0002");
@@ -70,7 +70,7 @@ public class ServiceImpl implements Service
 		        parent2.setOtrodoc("Ninguno");
 		        parent2.setCelular("99099999");
 		        parent2.setEmail("mrmaximus@gmail.com");
-		        
+		        parent2.setEstado("PENDIENTE");
 		        
 
 		        Parent parent3 = new Parent();
@@ -92,7 +92,7 @@ public class ServiceImpl implements Service
 		        parent3.setOtrodoc("Brevete 44444444");
 		        parent3.setCelular("997775688");
 		        parent3.setEmail("mrsinbox@gmail.com");
-		    	
+		        parent3.setEstado("PENDIENTE");
 		        
 		        Parent parent4 = new Parent();
 		        parent4.setCodigoParent("PAR0004");
@@ -113,7 +113,7 @@ public class ServiceImpl implements Service
 		        parent4.setOtrodoc("Ninguno");
 		        parent4.setCelular("99099999");
 		        parent4.setEmail("mrsmaximus@gmail.com");
-		       
+		        parent4.setEstado("PENDIENTE");
 		        
 		        
 		  

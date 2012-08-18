@@ -41,8 +41,8 @@ public class ParentMatriculaController extends AbstractController
 	private static final String  PARAMETRO_apPaternoM = "txt_appm"; 
 	private static final String  PARAMETRO_apMaternoP = "txt_apmp";
 	private static final String  PARAMETRO_apMaternoM = "txt_apmm";
-	private static final String  PARAMETRO_nombreP = "txt_nnp";
-	private static final String  PARAMETRO_nombreM = "txt_nnm";
+	private static final String  PARAMETRO_nombreP = "txt_np";
+	private static final String  PARAMETRO_nombreM = "txt_nm";
 	private static final String  PARAMETRO_dianacP = "txt_dp";
 	private static final String  PARAMETRO_mesP = "sel_mp";
 	private static final String  PARAMETRO_anionacP = "txt_ap";
@@ -122,7 +122,8 @@ public class ParentMatriculaController extends AbstractController
 			mama.setEmail(request.getParameter(PARAMETRO_emailM));
 
 			
-		
+			papa.setEstado("Actualizado");
+			mama.setEstado("Actualizado");
 			
 			logger.debug("Se Actualiz— al Papa'" + papa.getNombre() + "'");
 			logger.debug("Se Actualiz— a la Mam‡'" +  mama.getNombre() + "'");

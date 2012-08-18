@@ -8,6 +8,9 @@
 <html>
 <head>
 <title> Welcome to Markham College </title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script> 
+
 </head>
 
 <body bgcolor= "#FFFFFF">
@@ -31,9 +34,8 @@
 </table>
 		
 <br></br>
-<br></br>
-<br></br>
-<br></br>
+
+
 		<b><h5>PASO: 1 ACTUALIZACIÓN DE DATOS</h5></b>
 
 
@@ -42,12 +44,17 @@
 		
 		<tr align="center">
 			<th width="300"><small>ACTUALIZACION DE DATOS</small></th>
-			<th width="200"><small><font color="green">PENDIENTE</font></small></th>
+			<th width="200"><small><font color="green">
+			
+			${familyParents[0].estado}
+			
+		
+			</font></small></th>
 			<th width="250"><small><small><font color="blue"><a href="mk-actualizacion.jsp">Presione aquí para actualizar </a></font></small></small></th>
 		</tr>
 
 </table>
-<br></br>
+
 		<b><h5>PASO: 2 MATRICULAR ESTUDIANTE</h5></b>
 	
 
@@ -66,14 +73,67 @@ int c=0;
 <tr>
 
 			<th width="250"><small>${hijos.apPaterno} ${hijos.apMaterno}, ${hijos.nombre}    </small></th>
-			<th width="220"><small><font color="green"><!-- NO CUMPLE PRERREQUISITOS --></font></small></th>
+			<th width="220">
+			<small>
+			<font color="green">
+			
+			<script type="text/javascript">
+				var tFlag;
+				var mFlag;
+				var linkCONFORME ="<a href='mk-dni.jsp?s=<%= c %>'>Presione aquí para iniciar matrícula </a>";
+				var linkPENDIENTE ="<font color='#c0c0c0'>Presione aquí para iniciar matrícula</font>";
+				
+				$.getJSON("http://localhost:8080/ws-biblioteca/deudas/bibliotecapendiente/${hijos.codigoAlumno}", function(data) {  
+					tflag=0; 
+					   $.each(data, function(index, objetoDelListado) {  
+					       $.each(objetoDelListado, function(idx, data) {  
+					    	   if(tflag==0){
+					    		   if(data.estado == "Pendiente")tflag=1;
+					    	   }
+					    	 
+						});  
+					});  
+					  
+					});  
+			
+				$.getJSON("http://localhost:8080/ws-contabilidad/contabilidad/alumnopendiente/${hijos.codigoAlumno}", function(data) {  
+					mflag=0;
+					   $.each(data, function(index, objetoDelListado) {  
+					       $.each(objetoDelListado, function(idx, data) {  
+					    	 if(mflag==0){
+					    		   if(data.estado == "Pendiente")mflag=1;
+					    	 } 
+					    	 
+						});  
+					});  
+					   if(mflag==1 || tFlag==1){
+					   $("#spanReq${hijos.codigoAlumno}").append("NO CUMPLE PRERREQUISITOS");
+					   $("#spanLink${hijos.codigoAlumno}").html(linkPENDIENTE);
+					   }else{
+						   $("#spanReq${hijos.codigoAlumno}").append("CUMPLE PRERREQUISITOS");
+						   $("#spanLink${hijos.codigoAlumno}").html(linkCONFORME);
+					   }
+					}); 
+				
+					
+			</script>
+			
+			<!-- NO CUMPLE PRERREQUISITOS -->
+			<span id="spanReq${hijos.codigoAlumno}">
+			
+			</span>
+			</font>
+			</small>
+			</th>
 			<th width="250"><nobr><small>
 		<c:choose> 
  	    <c:when test="${hijos.codigomat != null}">
  	    	<font color="green" size=4 face="Verdana"><b>${hijos.codigomat}</b></font>
       	</c:when> 
  		<c:otherwise>
+ 		<span id="spanLink${hijos.codigoAlumno}">
  			<font color="green"><a href="mk-dni.jsp?s=<%= c %>">Presione aquí para iniciar matrícula </a></font>
+ 	  	</span>
  	  	</c:otherwise> 
     	</c:choose> 
 			<font color="blue"></font></small></nobr>
@@ -83,14 +143,11 @@ c++;
 %>
 </tr>
 </c:forEach>  
-
-		
-		 
-
-	
-
-		
 </table>
+<br></br><br></br><br></br>
+<p></p>
+<p></p>
+<p></p>
 <!--  ${childrenParents[0].nombre} -->
 <!-- 
 ${parent.codigoParent}
@@ -105,9 +162,6 @@ ${parent.documentoIdentidad}
 
 
 
-<br></br>		
-<br></br>
-
 	
 </font>
 
@@ -115,8 +169,6 @@ ${parent.documentoIdentidad}
 
 
 
-<br></br>
-<br></br>
 
 </font>
 </body>

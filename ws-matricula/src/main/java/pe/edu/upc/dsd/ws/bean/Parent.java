@@ -23,10 +23,16 @@ public class Parent {
 	private String celular;
 	private String email;
 	private String relation;
-	
+	private String estado;
 
 	
 	
+	public String getEstado() {
+		return estado;
+	}
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
 	public String getRelation() {
 		return relation;
 	}
