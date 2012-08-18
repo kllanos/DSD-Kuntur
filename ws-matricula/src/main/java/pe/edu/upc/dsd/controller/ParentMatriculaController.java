@@ -100,7 +100,7 @@ public class ParentMatriculaController extends AbstractController
 			papa.setMesnac(request.getParameter(PARAMETRO_mesP));
 			papa.setAnionac(request.getParameter(PARAMETRO_anionacP));
 			mama.setDianac(request.getParameter(PARAMETRO_dianacM));
-			papa.setMesnac(request.getParameter(PARAMETRO_mesh));
+			mama.setMesnac(request.getParameter(PARAMETRO_mesh));
 			mama.setAnionac(request.getParameter(PARAMETRO_anionacM));
 			papa.setEstadocivil(request.getParameter(PARAMETRO_estadocivilP));
 			mama.setEstadocivil(request.getParameter(PARAMETRO_estadocivilM ));
