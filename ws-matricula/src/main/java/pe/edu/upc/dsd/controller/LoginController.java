@@ -115,12 +115,23 @@ public class LoginController extends AbstractController
 			asignarSessionParents(request,parent);
 			
 			List<Alumno> childrenParents = new ArrayList<Alumno>();
+			
+			List<Parent> familyParents = new ArrayList<Parent>();
+			
 			childrenParents = service.obtenerHijos(parent.getCodigoParent());
+			familyParents = service.obtenerFamilia(parent.getCodigoParent());
+			
 			asignarSessionHijos(request,childrenParents);
+			asignarSessionFamilia(request,familyParents);
 			
 			for (Alumno alumnoListaTemp : childrenParents) 
 			{
 				logger.debug("Los Hijos ='" + alumnoListaTemp.getNombre() + "'");
+			}
+			
+			for (Parent familiaListaTemp : familyParents) 
+			{
+				logger.debug("Los Padres ='" + familiaListaTemp.getNombre() + "'" + "'" + familiaListaTemp.getRelation());
 			}
 			
 			
@@ -148,6 +159,10 @@ public class LoginController extends AbstractController
 	private  void asignarSessionHijos(HttpServletRequest request,List<Alumno> childrenParents)
 	{
 		request.getSession().setAttribute("childrenParents", childrenParents);
+	}
+	private  void asignarSessionFamilia(HttpServletRequest request,List<Parent> familyParents)
+	{
+		request.getSession().setAttribute("familyParents", familyParents);
 	}
 	
 	

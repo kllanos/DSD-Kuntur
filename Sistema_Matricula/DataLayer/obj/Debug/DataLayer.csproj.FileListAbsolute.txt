@@ -1,0 +1,21 @@
+C:\Users\jorge\Desktop\Sistema_Matricula\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\jorge\Desktop\Sistema_Matricula\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\jorge\Desktop\Sistema_Matricula\DataLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jorge\Desktop\Sistema_Matricula\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\jorge\Desktop\Sistema_Matricula\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\jorge\Desktop\Sistema_Matricula\DataLayer\bin\Debug\EntitiesLayer.dll
+C:\Users\jorge\Desktop\Sistema_Matricula\DataLayer\bin\Debug\EntitiesLayer.pdb
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\DataLayer\bin\Debug\DataLayer.dll
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\DataLayer\bin\Debug\DataLayer.pdb
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\DataLayer\bin\Debug\EntitiesLayer.dll
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\DataLayer\bin\Debug\EntitiesLayer.pdb
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\DataLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\DataLayer\obj\Debug\DataLayer.dll
+C:\Documents and Settings\Jorge\Escritorio\Sistema_Matricula\DataLayer\obj\Debug\DataLayer.pdb
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\DataLayer\bin\Debug\DataLayer.dll
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\DataLayer\bin\Debug\DataLayer.pdb
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\DataLayer\bin\Debug\EntitiesLayer.dll
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\DataLayer\bin\Debug\EntitiesLayer.pdb
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\DataLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\DataLayer\obj\Debug\DataLayer.dll
+C:\Documents and Settings\artvasq0\Escritorio\Sistema_Matricula\DataLayer\obj\Debug\DataLayer.pdb

@@ -5,6 +5,14 @@ public class AlumnoParent {
 	private String codigoAlumno;
 	private String codigoParent;
 	private String codigoFamilia;
+	private String relacion;
+	
+	public String getRelacion() {
+		return relacion;
+	}
+	public void setRelacion(String relacion) {
+		this.relacion = relacion;
+	}
 	public String getCodigoAlumno() {
 		return codigoAlumno;
 	}
